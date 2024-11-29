@@ -1,0 +1,38 @@
+.logo-pointer {
+  cursor: default !important;
+}
+/* Change the background color of the Masthead component */
+/* Set the entire Masthead background to yellow */
+.custom-masthead-1 {
+
+ --pf-v5-c-toolbar--BackgroundImage: url('http://34.176.132.135:9000/assets/header.png') !important;
+ --pf-v5-c-toolbar--BackgroundSize: cover !important; /* Ensures the image covers the entire masthead */
+ --pf-v5-c-toolbar--BackgroundRepeat: no-repeat !important; /* Avoids repeating the image */
+ --pf-v5-c-toolbar--BackgroundPosition: center !important; /* Centers the image */     
+
+}
+
+.pf-v5-c-masthead {
+    --pf-v5-c-masthead--PaddingRight: 0 !important;
+}
+
+.custom-masthead {
+
+ background-image: url('./header.png') !important;
+ background-size: cover !important; /* Ensures the image covers the entire masthead */
+ background-repeat: no-repeat !important; /* Avoids repeating the image */
+ background-position: center !important; /* Centers the image */
+ background-color: transparent !important;
+ 
+
+}
+.pf-v5-c-masthead .pf-v5-c-toolbar {
+    --pf-v5-c-toolbar--BackgroundColor: transparent !important;
+
+}
+
+.pf-v5-c-masthead__main {
+    margin-inline-end: 90px;
+    
+}
+

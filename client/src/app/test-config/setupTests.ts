@@ -1,0 +1,38 @@
+import "@testing-library/jest-dom";
+import { server } from "@mocks/server";
+import "@app/dayjs";
+
+const mockInitialized = false;
+
+jest.mock("@react-keycloak/web", () => {
+  const originalModule = jest.requireActual("@react-keycloak/web");
+  return {
+    ...originalModule,
+    useKeycloak: () => [mockInitialized],
+  };
+});
+
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useLocation: () => ({
+    pathname: "localhost:3000/example/path",
+  }),
+}));
+
+beforeAll(() => server.listen());
+afterEach(() => server.resetHandlers());
+afterAll(() => server.close());
+
+// Uncomment the following to see request logging in the console:
+
+// server.events.on("request:start", (req) => {
+//   console.log(`Handling a request to ${req.url.href}`);
+// });
+
+// server.events.on("request:match", (req) => {
+//   console.log(`Request to ${req.url.href} was matched with a handler`);
+// });
+
+// server.events.on("request:unhandled", (req) => {
+//   console.warn(`Request to ${req.url.href} was not handled`);
+// });

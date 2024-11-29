@@ -1,0 +1,14 @@
+.logo-pointer {
+  cursor: default !important;
+}
+/* Change the background color of the Masthead component */
+/* Set the entire Masthead background to yellow */
+.custom-masthead {
+
+ --pf-v5-c-masthead--BackgroundImage: url('assets/header.png');
+ --pf-v5-c-masthead--BackgroundSize: cover; /* Ensures the image covers the entire masthead */
+ --pf-v5-c-masthead--BackgroundRepeat: no-repeat; /* Avoids repeating the image */
+ --pf-v5-c-masthead--BackgroundPosition: center; /* Centers the image */     
+
+}
+

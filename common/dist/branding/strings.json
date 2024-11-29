@@ -1,0 +1,21 @@
+{
+  "application": {
+    "title": "App Decomposer",
+    "name": "App Decomposer",
+    "description": "App Decomposer"
+  },
+  "about": {
+    "displayName": "App Decomposer",
+    "imageSrc": "<%= brandingRoot %>/images/header.png",
+    "documentationUrl": "https://konveyor.github.io/konveyor/"
+  },
+  "masthead": {
+    "leftBrand": {
+      "src": "<%= brandingRoot %>/images/jioma-logo.png",
+      "alt": "brand",
+      "height": "60px"
+    },
+    "leftTitle": null,
+    "rightBrand": null
+  }
+}
